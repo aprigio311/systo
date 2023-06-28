@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 100%;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+a:hover{
+	opacity: 0.7;
+}
+
+.logo{
+	font-size: 20px;
+	letter-spacing: 2px;
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+
+.logo img{
+	margin-left: 15px;
+	margin-right: 5px;
+}
+.git{
+	letter-spacing: 0;
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: 'Josefin Sans', sans-serif;
+	background: #0e0ea7;
+	height: 8vh;
+
+}
+
+.nav-list{
+	list-style: none;
+	display: flex;
+
+}
+
+.nav-list li{
+	letter-spacing: 3px;
+	margin-left: 32px;
+
+}
+
+.menu-mobile{
+	display: none;
+	cursor: pointer;
+}
+
+.menu-mobile div{
+	width: 32px;
+	height: 2px;
+	background: white;
+	margin: 8px;
+}
+
+@keyframes navLinkFade {
+	from {
+	  opacity: 0;
+	  transform: translateX(50px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+  
+  .mobile-menu.active .line1 {
+	transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+	opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+	transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+main{
+	background: #3b3b94;
+	background-size: cover;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.info-cliente{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	background-image: url(https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105__480.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+}
+
+.info-cliente2 span{
+	padding-top: 15px;
+	text-align: center;
+	font-size: 35px;
+	font-weight: 900;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+}
+.info-cliente2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	background-color: rgb(39, 39, 39);
+	padding-bottom: 10px;
+
+}
+
+.servicos{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.card-servicos{
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	align-items: center;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.card-servicos h2{
+	font-weight: 900;
+	font-family: 'Courier New', Courier, monospace
+}
+
+.servicos img{
+	border-radius: 50%;
+	width: 400px;
+	height: 350px;
+}
+.info-text h1{
+	margin-top: 15px;
+	padding-top: 15px;
+	text-align: center;
+	font-size: 32px;
+	font-weight: 900;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+}
+section div.info-text2 h1{
+	padding-top: 15px;
+	text-align: center;
+	font-size: 32px;
+	font-weight: 900;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+}
+.info-text{
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Josefin Sans', sans-serif;
+	color: rgb(212, 209, 209);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.info-text p{
+	padding: 15px;
+	text-align: center;
+	
+}
+
+.system-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.system-info2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.system-text{
+	padding: 20px 20px;
+	width: 75%;
+}
+.system-text p{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	color: rgb(212, 209, 209);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.system-help img{
+	border-radius: 50%;
+}
+
+.system-info span{
+	padding-top: 15px;
+	text-align: center;
+	font-size: 35px;
+	font-weight: 900;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+}
+
+.clientes h1{
+	margin: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.clientes{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.card-clientes{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.card-clientes h1{
+	margin-bottom: 1px;
+}
+.clientes img{
+	border: white 2px solid;
+	border-radius: 10px;
+	max-width: 400px;
+	max-height: 400px;
+}
+footer{
+	height: 8vh;
+}
+.rodape{
+	background-color: #0e0ea7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+}
+
+.direitos{
+font-size: 24px;
+color: white;
+}
+
+.social-media img{
+	width: 50px;
+	padding: 15px;
+}
+
+
+/******************************************* MOBILE ********************************************/
+
+
+@media (max-width: 999px){
+	body{
+		overflow-x: hidden ;
+	}
+	nav{
+		position: fixed;
+		width: 100%;
+	}
+	.logo{
+		font-size: 15px;
+		letter-spacing: 2px;
+		display: flex;
+		align-items: center;
+		margin-right: 10px;
+
+	}
+	
+	.logo img{
+		margin-left: 30px;
+		margin-right: 5px;
+	}
+	.git{
+		letter-spacing: 0;
+	}
+	.nav-list{
+		position: absolute;
+		top: 8vh;
+		right: 0;
+		width: 50vw;
+		height: 92vh;
+		background: #0b0b47;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		transform: translateX(100%);
+	}
+
+	.nav-list li{
+		margin-left: 0;
+		opacity: 0;
+	}
+
+	.menu-mobile{
+		display: block;
+	}
+
+	.servicos{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	.card-servicos{
+		display: flex;
+		flex-direction: column;
+		border-radius: 20px;
+		background-color: rgb(47, 70, 54);
+		align-items: center;
+		justify-content: space-around;
+		margin: 20px 0;
+		width: 105px;
+		height: 220px;
+	}
+	
+	.card-servicos h2{
+		font-size: 11px;
+		text-align: center;
+	}
+	
+	.servicos img{
+		border-radius: 50%;
+		width: 100px;
+		height: 90px;
+	}
+
+	.system-info{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.system-info2{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.system-text{
+		width: 80%;
+	}
+	.system-text p{
+		font-size: 12px;
+		font-weight: 400;
+		padding-top: 20px;
+		font-family: 'Josefin Sans', sans-serif;
+		text-align: center;
+		color: rgb(212, 209, 209);
+	}
+	.system-help img{
+		width: 300px;
+		height: 250px;
+		border-radius: 50%;
+		padding-top: 20px;
+	}
+	
+	.system-info span{
+		margin-top: 20px;
+		padding-top: 15px;
+		text-align: center;
+		font-size: 35px;
+		font-weight: 900;
+		font-family: 'Josefin Sans', sans-serif;
+		color: white;
+	}
+
+	.info-cliente2 span{
+		padding-top: 15px;
+		text-align: center;
+		font-size: 35px;
+		font-weight: 900;
+		font-family: 'Josefin Sans', sans-serif;
+		color: white;
+	}
+
+	.info-cliente{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: white;
+		background-color: rgb(39, 39, 39);
+		padding-bottom: 10px;
+		margin-top: 60px;
+	
+	}
+	.info-cliente2{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: white;
+		background-color: rgb(39, 39, 39);
+		padding-bottom: 10px;
+	
+	}
+
+	.clientes img{
+		border: white 2px solid;
+		border-radius: 10px;
+		max-width: 350px;
+		max-height: 300px;
+	}
+	
+	.rodape{
+		background-color: #0e0ea7;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	
+	.direitos{
+	font-size: 16px;
+	color: white;
+	}
+	.social-media{
+		display: flex;
+	}
+	.social-media img{
+		width: 35px;
+		padding: 15px;
+	}
+}
+
+.nav-list.active{
+	transform: translateX(0);
+}
+
+
+/****************************PAGINA DE LOGIN***********************************************/
+.systo-login{
+	background-color: black;
+	height: 100vw;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105__480.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.form-login{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	justify-content: space-around;
+	color: white;
+	margin-bottom: 30px;
+}
+
+.button-login{
+	margin-top: 10px;
+	width: 100%;
+}
+
+.button-cadastro{
+	width: 50%;
+	margin-top: 20px;
+}
+
+.form-group{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.login{
+	width: 35%;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/****************************PAGINA DE LOGIN mobile***********************************************/
+
+
+@media (max-width: 999px){
+
+main{
+	height: 100%;
+}	
+.systo-login{
+	height: 100vw;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105__480.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.form-login{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	justify-content: space-around;
+	color: white;
+	margin-bottom: 30px;
+}
+
+.button-login{
+	margin-top: 10px;
+	width: 100%;
+}
+
+.button-cadastro{
+	width: 50%;
+	margin-top: 20px;
+}
+
+.form-group{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.login{
+	width: 35%;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+	
+}
